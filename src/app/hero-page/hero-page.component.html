@@ -1,0 +1,5 @@
+<input MatInput [(ngModel)]="heroName">
+<button (click)="saveHero()" >Save</button>
+{{ heroName }}
+
+<app-hero-list [items]="heroList"></app-hero-list>

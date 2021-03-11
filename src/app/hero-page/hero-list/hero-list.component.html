@@ -1,0 +1,6 @@
+<button class="item" (click)="reload()">Reload</button>
+
+<ul>
+	<app-hero-item *ngFor="let hero of items" [item]="hero"
+	 (selectedItem)="onSelectedItem($event)"></app-hero-item>
+</ul>
